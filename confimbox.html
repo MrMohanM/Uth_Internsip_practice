@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Mohan M">
+<title>Lie Detector Test</title>
+<script>
+    function askAboutLying() {
+    var reply; // user's reply
+    reply = confirm("Do you always tell the truth?");
+    var msg1,msg2;
+    if (reply== true){
+            alert("When asked whether you always tell" +
+        " the truth, your replied that you always tell the Truth.");
+        msg1=document.getElementById("ans");
+        msg1.innerHTML="You are saying lie because a person is not able to speak truth always,"+"<br>"
+        +"but speaking  lie is not a crime if it helps to happens good things the lies also good"+"<br>"+"it said by thiruvalluvar in thirukural";
+    }
+    else{
+            alert("When asked whether you always tell" +
+        "  your replied that you are always not speak the truth.");
+        msg1=document.getElementById("ans");
+        msg1.innerHTML="You are a honest person because a person is not able to speak truth always,"+"<br>"
+        +"but speaking  lie is  not a crime if it helps to happens good things the lies also good"+"<br>"+"it said by thiruvalluvar in thirukural"
+    }
+
+    } 
+</script>
+</head>
+<body onload="askAboutLying();">
+    <h1 style="text-decoration: underline;">Lies:</h1>
+    <h2 id="ans"> </h2>
+    <h3 lang="ta">
+        <p ><strong>குறள்:</strong></p>  
+        <pre>
+            பொய்மையும் வாய்மை யிடத்த புரைதீர்ந்த
+            நன்மை பயக்கும் எனின்
+        </pre> 
+        <p ><strong>விளக்கம்:</strong></p> 
+
+        <p> 
+            <pre> 
+            பிறருக்கு தீமை இல்லாமல் நன்மை பயக்கும் பொய்யான சொற்களும், 
+            வாய்மை என்று கருதப்படலாம்
+            </pre>
+        </p> 
+
+    </h3>
+</body>
+</html>
