@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petregisteration</title>
+    <style>
+        .table{ display: table;}
+        .row{display: table-row;}
+        .row > * { display: table-cell;}
+        .row > :first-child {text-align: right;}
+        #more-info{display: none;}
+    </style>
+    <script src="petRegister.js"></script>
+</head>
+<body>
+    <h1>Pet Registeration</h1>
+    <form class="table" id="myform">
+        <div class="row"> 
+            <label for="name">Pet Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="row">
+            <label for="type">Pet Type</label>
+            <select  id="type" required onchange="adjustForm(this.form);">
+                <option value=" "></option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select>
+            <div id="more-info">
+                <label for="trick">Favorite Trick:</label>
+                <input type="text" id="trick" value="none">
+            </div>
+        </div>
+    </form>
+    <br>
+    <input type="button" form="myform" value="Register your pet" onclick="register(this.form);">
+    <br>
+    <p id="msg"></p>
+</body>
+</html>
