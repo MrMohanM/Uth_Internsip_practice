@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-templete-column-eg1</title>
+    <style>
+        .grid1{
+            display: grid;
+            grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+        }
+        .a{
+            background-color:rgb(28, 226, 28);
+            color: rgb(226, 24, 24);
+            text-align: center;
+        }
+        .b{
+            background-color:rgb(226, 24, 24);
+            color: rgb(28, 226, 28);
+            text-align: center;
+        }
+        .c{ 
+            background-color:rgb(28, 226, 28);
+            color: rgb(226, 24, 24);
+            text-align: center;
+        }
+        .grid2{
+            display: grid;
+            grid-template-columns: 200px repeat(auto-fill, 150px) 200px;
+        }
+        .grid3{ 
+           
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);;
+        }
+        .grid4{
+            display: grid;
+            grid-template-columns: fit-content(50%) fit-content(50%)
+        }
+    </style>
+</head>
+<body>
+    <div class="grid1">
+        <div class="a"> 
+            <h1>HI!!</h1>
+        </div>
+        <div class="b"> 
+            <h1>Hello!</h1>
+        </div>
+    </div>
+    <br>
+    <br>
+     <div class="grid2">
+        <div class="a"> 
+            <h1>HI!!</h1>
+        </div>
+        <div class="b"> 
+             <h1>Hello!</h1>
+        </div>
+        <div class="a"> 
+            <h1>How are you?</h1> 
+        </div>
+        <div class="b"> 
+            <h1>How are you?</h1> 
+        </div>
+        <div class="a"> 
+            <h1>How are you?</h1> 
+        </div>
+        <div class="b"> 
+            <h1>How are you?</h1> 
+        </div>
+     </div>
+        <br>
+        <br>
+         <div class="grid3">
+            <div class="a"> 
+                <h1>HI!!</h1>
+            </div>
+            <div class="b"> 
+                 <h1>Hello!</h1>
+            </div>
+            <div class="a"> 
+                <h1>How are you?</h1> 
+            </div>
+            <div class="b"> 
+                <h1>I am fine!</h1> 
+            </div>
+         </div>
+         <br>
+         <br>
+          <div class="grid4">
+             <div class="a"> 
+                 <h1>HI!!</h1>
+             </div>
+             <div class="b"> 
+                  <h1>Hello!</h1>
+             </div>
+             <div class="b"> 
+                 <h1>How are you?</h1> 
+             </div>
+             <div class="c"> 
+                 <h1>I am fine!</h1> 
+             </div>
+          </div>
+</body>
+</html>

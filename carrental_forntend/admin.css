@@ -1,0 +1,44 @@
+header {
+    background-color: rgb(219, 218, 186);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+        
+.header-container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+.easycars{
+    color:#0594d8;
+}
+.easycars span{
+    color:orange;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover{
+    color: #637780;
+    text-decoration: underline;
+    
+}
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    gap: 25px;
+    
+}

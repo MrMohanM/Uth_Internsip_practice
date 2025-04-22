@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easycars Login</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family:'Times New Roman', Times, serif;
+            background-color: #e2d9d9; 
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+            background-color: rgb(219, 218, 186);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header span {
+            color: #0594d8;
+        }
+        .header h1{
+            color: rgba(243, 113, 26, 0.904);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+        .login-container {
+            width: 300px;
+            height: 250px;
+            box-shadow: 5px 5px 5px 5px rgba(243, 113, 26, 0.904);
+            border-radius: 10px;
+            background-color: rgb(219, 218, 186);
+            padding: 20px;
+            text-align: center;
+        }
+        .login-container a{
+            color: rgba(243, 113, 26, 0.904);
+        }
+
+        input {
+            border-radius: 5%;
+            box-shadow: 0 5px 5px rgba(133, 130, 130, 0.1);
+        }
+
+        button {
+            color: rgb(7, 7, 7);
+            border-radius: 15%;
+            border: 2px solid rgb(77, 76, 75);
+            background-color:  #0594d8;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><span s>Easy</span>Cars</h1>
+    </div>
+
+    <div class="container">
+        <div class="login-container">
+            <h1>Login</h1>
+            <form>
+                <label for="Username">Username:</label>
+                <input type="text" class="Username" id="Username" placeholder="Username/Email">
+                <br><br>
+                <label for="Password">Password:</label>
+                <input type="password" class="Password" id="Password">
+                <br> <br>
+                <button class="login" id="login">Login</button>
+                <br><a href="#">Forget password</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>New user? <a href="register.html">Register</a></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

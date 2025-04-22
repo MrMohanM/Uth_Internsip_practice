@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit-1</title>
+    <title>Easycars login</title>
+    <style>
+        body, html 
+        {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; 
+        }
+
+        .container 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+        .login-container 
+        {
+            width: 300px;
+            height: 250px;
+            box-shadow: 5px 5px 5px 5px rgb(226, 75, 0);
+            border-radius: 10px;
+            background-color: rgb(219, 218, 186);
+            padding: 20px;
+            text-align: center;
+        }
+
+        input{
+            border-radius: 5%;
+            box-shadow: 0 5px 5px rgba(133, 130, 130, 0.1);
+        }
+        button{
+            color: rgb(7, 7, 7);
+            border-radius: 15%;
+            border: 2px;
+            border-color:rgb(255, 102, 0);
+            background-color: #0594d8;
+            font-size:20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
 </head>
 <body>
     
+    <div class="container">
+        <h1 style="color: orange; font-size: large;"><span style="color:#0594d8;">Easy</span>Cars</h1>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <label for="Username">Username:</label>
+            <input type="text" class="Username" id="Username" placeholder="Username/Email">
+            <br><br>
+            <label for="Password">Password:</label>
+            <input type="password" class="Password" id="Password">
+            <br> <br>
+            <button class="login" id="login">Login</button>
+            <br><a href="#">Forget password</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>new user <a href="#">Register</a></p>
+        </form>
+    </div>
+</div>
 </body>
 </html>
